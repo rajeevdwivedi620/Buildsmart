@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materials | BuildTrack</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="materials">
+<header><nav class="nav"><a class="brand" href="index.html">Build<span>Track</span></a>
+<div class="links"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="tasks.html">Tasks</a><a href="workers.html">Workers</a><a href="materials.html">Materials</a><a href="dashboard.html">Dashboard</a></div></nav></header>
+<main><h2>Materials</h2>
+<form id="materialForm">
+<label>Material Name<select id="mName"><option>Cement</option><option>Bricks</option><option>Steel</option><option>Sand</option></select></label>
+<label>Quantity Required<input type="number" min="0" id="mReq" required></label>
+<label>Quantity Available<input type="number" min="0" id="mAvail" required></label>
+<button class="btn" type="submit">Add Material</button></form>
+<h2>Stock Status</h2>
+<div class="table-wrap"><table><thead><tr><th>Material</th><th>Required</th><th>Available</th><th>Shortage</th><th>Status</th></tr></thead><tbody id="materialBody"></tbody></table></div></main>
+<footer><p>&copy; 2026 BuildTrack - Construction Project Management</p><p>CSE326 Internet Programming, LPU | Team Members: 46, 48, 56 | Row No: 485</p></footer>
+<script src="script.js"></script></body></html>

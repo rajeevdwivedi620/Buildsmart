@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | BuildTrack</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="projects">
+<header><nav class="nav"><a class="brand" href="index.html">Build<span>Track</span></a>
+<div class="links"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="tasks.html">Tasks</a><a href="workers.html">Workers</a><a href="materials.html">Materials</a><a href="dashboard.html">Dashboard</a></div></nav></header>
+<main><h2>Projects</h2>
+<form id="projectForm">
+<label>Project Name<input id="pName" required></label>
+<label>Location<input id="pLoc" required></label>
+<label>Start Date<input type="date" id="pStart" required></label>
+<label>Deadline<input type="date" id="pDeadline" required></label>
+<label>Status<select id="pStatus"><option>Active</option><option>Completed</option><option>Delayed</option></select></label>
+<button class="btn" type="submit">Add Project</button></form>
+<p class="msg" id="msg"></p>
+<div class="filter"><label for="pFilter">Filter by Status:</label><select id="pFilter"><option>All</option><option>Active</option><option>Completed</option><option>Delayed</option></select></div>
+<div class="table-wrap"><table><thead><tr><th>Name</th><th>Location</th><th>Start</th><th>Deadline</th><th>Status</th><th>Action</th></tr></thead><tbody id="projectBody"></tbody></table></div></main>
+<footer><p>&copy; 2026 BuildTrack - Construction Project Management</p><p>CSE326 Internet Programming, LPU | Team Members: 46, 48, 56 | Row No: 485</p></footer>
+<script src="script.js"></script></body></html>

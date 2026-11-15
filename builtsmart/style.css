@@ -1,0 +1,49 @@
+:root{--navy:#0b2545;--navy2:#13315c;--orange:#ff7a1a;--yellow:#ffc72c;--bg:#f2f5fa;--white:#fff;--red:#d62828;--green:#1f9d55;--text:#1b263b;--muted:#5c6b82}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;display:flex;flex-direction:column;min-height:100vh}
+main{flex:1;width:100%;max-width:1100px;margin:0 auto;padding:28px 16px}
+a{text-decoration:none;color:inherit}
+/* navbar */
+header{background:var(--navy);border-bottom:4px solid var(--yellow);position:sticky;top:0;z-index:5}
+.nav{max-width:1100px;margin:auto;padding:12px 16px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px}
+.brand{font-size:1.5rem;font-weight:800;color:var(--white)}.brand span{color:var(--orange)}
+.links{display:flex;flex-wrap:wrap;gap:4px}
+.links a{color:#cfd9ea;padding:6px 12px;border-radius:8px;font-size:.95rem;transition:.2s}
+.links a:hover,.links a.active{background:var(--orange);color:var(--white)}
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--white);text-align:center;padding:80px 20px;border-bottom:6px solid var(--orange)}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem)}.hero h1 span{color:var(--orange)}
+.hero p{max-width:620px;margin:14px auto 26px;color:#dbe4f3;font-size:1.1rem}
+.btn{display:inline-block;background:var(--orange);color:var(--white);border:none;padding:10px 22px;border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer;transition:.2s}
+.btn:hover{background:var(--yellow);color:var(--navy);transform:translateY(-2px)}
+.btn.small{padding:5px 12px;font-size:.85rem}.btn.danger{background:var(--red)}.btn.ok{background:var(--green)}
+h2{color:var(--navy);margin:28px 0 14px;border-left:6px solid var(--yellow);padding-left:10px}
+/* grid cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.card{background:var(--white);border-radius:14px;padding:20px;box-shadow:0 3px 12px rgba(11,37,69,.1);border-top:4px solid var(--orange);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(11,37,69,.18)}
+.card h3{color:var(--navy);margin-bottom:6px}.card p{color:var(--muted);font-size:.95rem}
+.card.yellow{border-top-color:var(--yellow)}
+.stat{font-size:2.4rem;font-weight:800;color:var(--orange)}
+/* forms */
+form{background:var(--white);padding:20px;border-radius:14px;box-shadow:0 3px 12px rgba(11,37,69,.1);display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;align-items:end}
+label{display:flex;flex-direction:column;font-weight:600;font-size:.9rem;gap:4px}
+input,select{padding:9px;border:2px solid #d5dde9;border-radius:8px;font-size:1rem;font-family:inherit}
+input:focus,select:focus{outline:none;border-color:var(--orange)}
+.msg{color:var(--red);font-weight:600;margin-top:8px;min-height:1.4em}
+.filter{margin:18px 0 8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+/* table */
+.table-wrap{overflow-x:auto;background:var(--white);border-radius:14px;box-shadow:0 3px 12px rgba(11,37,69,.1)}
+table{width:100%;border-collapse:collapse;min-width:620px}
+th{background:var(--navy);color:var(--white);text-align:left;padding:12px}
+td{padding:11px 12px;border-bottom:1px solid #e6ebf3}
+tr:hover td{background:#fff8ec}
+.badge{padding:3px 10px;border-radius:20px;font-size:.8rem;font-weight:700;color:var(--white);background:var(--navy2)}
+.Active,.In-Progress{background:var(--orange)}.Completed{background:var(--green)}.Delayed{background:var(--red)}.Pending{background:#8a96aa}
+.red{color:var(--red);font-weight:700}.green{color:var(--green);font-weight:700}
+/* dashboard */
+.bar{background:#dde4ef;border-radius:20px;height:22px;overflow:hidden}
+.bar div{background:linear-gradient(90deg,var(--orange),var(--yellow));height:100%;color:var(--navy);font-size:.8rem;font-weight:700;text-align:center;line-height:22px}
+ul.list{list-style:none}ul.list li{padding:8px 0;border-bottom:1px dashed #cbd5e4}
+footer{background:var(--navy);color:#cfd9ea;text-align:center;padding:20px 12px;border-top:4px solid var(--yellow);font-size:.9rem}
+@media(max-width:600px){.hero{padding:50px 16px}.links a{padding:5px 8px;font-size:.85rem}}

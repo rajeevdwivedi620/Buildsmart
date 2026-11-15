@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workers | BuildTrack</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="workers">
+<header><nav class="nav"><a class="brand" href="index.html">Build<span>Track</span></a>
+<div class="links"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="tasks.html">Tasks</a><a href="workers.html">Workers</a><a href="materials.html">Materials</a><a href="dashboard.html">Dashboard</a></div></nav></header>
+<main><h2>Workers / Team</h2>
+<form id="workerForm">
+<label>Worker Name<input id="wName" required></label>
+<label>Role<select id="wRole"><option>Mason</option><option>Electrician</option><option>Plumber</option><option>Labour</option></select></label>
+<label>Phone<input id="wPhone" type="tel" pattern="[0-9]{10}" title="10 digit number" required></label>
+<label>Assigned Project<select id="wProject" required></select></label>
+<button class="btn" type="submit">Add Worker</button></form>
+<div class="filter"><label for="wFilter">Search by Role:</label><select id="wFilter"><option>All</option><option>Mason</option><option>Electrician</option><option>Plumber</option><option>Labour</option></select></div>
+<div class="grid" id="workerGrid"></div></main>
+<footer><p>&copy; 2026 BuildTrack - Construction Project Management</p><p>CSE326 Internet Programming, LPU | Team Members: 46, 48, 56 | Row No: 485</p></footer>
+<script src="script.js"></script></body></html>
