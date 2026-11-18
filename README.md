@@ -65,7 +65,7 @@ No more paper registers. No more WhatsApp confusion. Manage everything from one 
 - **Home** - Overview & Navigation
 - **Projects** - Create & Manage Projects
 - **Tasks** - Assign & Track Tasks
-- **Workers** - Manage Workers
+- **Workers** - Manage Worker
 - **Materials** - Track Material Stock & Shortage
 - **Dashboard** - Full Project Analytics
 
